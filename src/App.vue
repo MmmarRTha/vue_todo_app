@@ -3,6 +3,10 @@ import { ref } from 'vue';
 import TaskForm from './components/TaskForm.vue';
 
 const message = ref("TODO APP");
+
+function addTask(newTask: string) {
+    console.log(newTask)
+}
 </script>
 
 <template>
@@ -10,6 +14,6 @@ const message = ref("TODO APP");
         <h1 class="text-white font-bold text-3xl sm:text-4xl lg:text-5xl text-center">
             {{ message }}
         </h1>
-        <TaskForm />
+        <TaskForm  @add-task="addTask"/>
     </main>
 </template>
