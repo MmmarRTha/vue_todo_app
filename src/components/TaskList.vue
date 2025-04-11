@@ -19,7 +19,7 @@ const emits = defineEmits<{
             type="checkbox" 
             class="mr-2" 
             >
-            {{ task.title }}
+            <span :class="{'line-through text-gray-400': task.done}">{{ task.title }}</span>
         </label>
     </article>
 </template> 
