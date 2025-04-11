@@ -18,7 +18,7 @@ const emits = defineEmits<{
             <span :class="{ 'line-through text-gray-400': task.done }">{{ task.title }}</span>
         </label>
         <button
-            class="bg-cyan-600 hover:bg-cyan-700 text-white text-base font-medium py-2 px-4 rounded-sm transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:ring-offset-2 w-full mt-2 sm:mt-0 sm:w-auto">
+            class="border border-cyan-500 text-cyan-500 hover:border-cyan-300 hover:text-cyan-300 text-base font-medium py-2 px-4 rounded-sm transition-colors duration-200 focus:outline focus:outline-cyan-200 w-full mt-2 sm:mt-0 sm:w-auto hover:shadow-xs shadow-cyan-100">
             Remove
         </button>
     </article>
