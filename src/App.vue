@@ -4,8 +4,9 @@ import TaskForm from './components/TaskForm.vue';
 import type { TaskFilter, Task } from './types';
 import TaskList from './components/TaskList.vue';
 import FilterButton from './components/FilterButton.vue';
+import Footer from './components/Footer.vue';
 
-const message = ref("TODO APP");
+const message = ref("Task App");
 const tasks = ref<Task[]>([]);
 const filter = ref<TaskFilter>("all");
 
@@ -78,5 +79,6 @@ function setFilter(value: TaskFilter) {
             />
         </div>
         <TaskList :tasks="filteredTasks" @toggle-done="toggleDone" @remove-task="removeTask" />
+        <Footer />
     </main>
 </template>
