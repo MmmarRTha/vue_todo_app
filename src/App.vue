@@ -54,14 +54,14 @@ function setFilter(value: TaskFilter) {
 </script>
 
 <template>
-    <main class="max-w-3xl mx-auto my-4 px-4 sm:px-6 lg:px-8">
+    <main class="max-w-3xl mx-auto my-4 px-4 sm:px-6 lg:px-8" role="main">
         <h1 class="text-white font-bold text-3xl sm:text-4xl lg:text-5xl text-center">
             {{ message }}
         </h1>
         <TaskForm @add-task="addTask" />
         <h3 v-if="!tasks.length" class="mt-6 text-xl text-center text-white font-medium">Add a task to get started.</h3>
-        <h3 v-else class="mt-6 text-xl text-center text-white font-medium"> {{ totalDone }}/{{ tasks.length }} tasks completed</h3>
-        <div v-if="tasks.length" class="flex justify-center sm:justify-end mt-4 gap-6 font-bold">
+        <h3 v-else class="mt-6 text-xl text-center text-white font-medium" role="status" aria-live="polite"> {{ totalDone }}/{{ tasks.length }} tasks completed</h3>
+        <div v-if="tasks.length" class="flex justify-center sm:justify-end mt-4 gap-6 font-bold" role="tablist" aria-label="Task filters">
             <FilterButton 
                 :currentFilter="filter" 
                 filter="all" 

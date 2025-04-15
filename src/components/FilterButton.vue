@@ -32,7 +32,11 @@ const getButtonClasses = computed(() => {
 <template>
     <button
         :class="getButtonClasses"
-        @click="emits('setFilter', props.filter)">
+        @click="emits('setFilter', props.filter)"
+        role="tab"
+        :aria-selected="props.currentFilter === props.filter"
+        :aria-controls="`${props.filter}-tab`"
+    >
         {{ props.filter }}
     </button>
 </template>
