@@ -1,6 +1,6 @@
 # Task Management Application
 
-A modern, responsive task management application built with Vue 3, TypeScript, and Tailwind CSS. This project demonstrates my expertise in frontend development, focusing on user experience, accessibility, and clean code architecture.
+A modern, responsive task management application built with Vue 3, TypeScript, and Tailwind CSS.
 
 ## 🚀 Features
 
