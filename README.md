@@ -58,13 +58,6 @@ npm run dev
 npm run build
 ```
 
-## 🧪 Testing
-
-Run the test suite:
-```bash
-npm run test
-```
-
 ## 🔍 Code Quality
 
 - ESLint for code linting
