@@ -1,4 +1,5 @@
 # Task Management Application
+<img width="2936" height="1572" alt="Screenshot 2025-11-02 at 18-21-59 Task Management App" src="https://github.com/user-attachments/assets/ecb09e36-4365-478f-992f-a7adf50c6983" />
 
 A modern, responsive task management application built with Vue 3, TypeScript, and Tailwind CSS.
 
